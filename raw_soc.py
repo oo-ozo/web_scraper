@@ -9,7 +9,7 @@ class raw_sock():
     def req(self):
         s = socket.socket()
         s.connect((self.name, 80))
-        self.text = 'GET / HTTP/1.1\r\nHost: {}\r\n\r\n'.format(self.name)    
+        self.text = 'HEAD / HTTP/1.1\r\nHost: {}\r\n\r\n'.format(self.name)    
         s.send(self.text.encode())
             
         data = s.recv(1024)
