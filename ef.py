@@ -140,7 +140,7 @@ elif arg.url:
             """|--[%s]-->
 |
 |_%s@%selement_find(%sonline%s)%s#%sshell >%s""" % (
-                ul[0],
+                arg.url,
                 fg(3),
                 fg(9),
                 fg(2),
