@@ -170,10 +170,6 @@ elif arg.url:
             )
             sys.exit()
 
-        elif 'help' in el:
-            help()
-            
-
         elif 'ip' in el:
             print(soc.ip())
 
